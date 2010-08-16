@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="2.2" modules="freeware" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPHELPLINK" Value="http://steffenvogel.de/"/>
+    <ROW Property="ARPNOMODIFY" Value="1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://steffenvogel.de/stff/Programmieren/Delphi/Potenz/Ranking/"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="http://steffenvogel.de/stff/Programmieren/Delphi/Potenz/Ranking/"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp"/>
+    <ROW Property="Manufacturer" Value="Steffen Vogel, Lucas Baier, Benedikt Lauer"/>
+    <ROW Property="ProductCode" Value="{054F3E9D-2D76-4589-BD90-4B814D5E5086}"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Potenzübungsprogramm"/>
+    <ROW Property="ProductVersion" Value="3.3"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{F5843571-42E1-43F0-8F85-461011D90968}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Quelltext_DIR" Directory_Parent="SHORTCUTDIR" DefaultDir="Quellt~1|Quelltext"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Potenz.exe" ComponentId="{137E8EB5-1A97-4663-8669-89983CF3E47D}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Potenz.exe" FullKeyPath="TARGETDIR\Potenz.exe"/>
+    <ROW Component="Potenz.hlp" ComponentId="{AA156AC4-8E58-4B0C-8640-247F0670607F}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Potenz.hlp" FullKeyPath="TARGETDIR\Potenz.hlp"/>
+    <ROW Component="Potenz.hlp_1" ComponentId="{1A4879A8-A413-4399-BAED-B3C065123239}" Directory_="Quelltext_DIR" Attributes="0" Condition="" KeyPath="Potenz.hlp_1" FullKeyPath="SHORTCUTDIR\Quelltext\Potenz.hlp"/>
+    <ROW Component="Right.wav" ComponentId="{5122887A-42A8-4EB7-9945-0385F1075991}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Right.wav" FullKeyPath="TARGETDIR"/>
+    <ROW Component="Unit3.dfm" ComponentId="{561D9A6C-B07A-4BB1-8AD6-33C327A73B53}" Directory_="Quelltext_DIR" Attributes="0" Condition="" KeyPath="Unit3.dfm" FullKeyPath="SHORTCUTDIR\Quelltext"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="TARGETDIR" Attributes="0" Components="Right.wav Potenz.hlp Unit3.dfm Potenz.hlp_1 Potenz.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BadResult.wav" Component_="Right.wav" FileName="BadRes~1.wav|BadResult.wav" Version="" Language="" Attributes="0" SourcePath="BadResult.wav" SelfReg="false"/>
+    <ROW File="BadResult.wav_1" Component_="Unit3.dfm" FileName="BadRes~1.wav|BadResult.wav" Version="" Language="" Attributes="0" SourcePath="BadResult.wav" SelfReg="false"/>
+    <ROW File="GoodResult.wav" Component_="Right.wav" FileName="GoodRe~1.wav|GoodResult.wav" Version="" Language="" Attributes="0" SourcePath="GoodResult.wav" SelfReg="false"/>
+    <ROW File="GoodResult.wav_1" Component_="Unit3.dfm" FileName="GoodRe~1.wav|GoodResult.wav" Version="" Language="" Attributes="0" SourcePath="GoodResult.wav" SelfReg="false"/>
+    <ROW File="Potenz.GID" Component_="Unit3.dfm" FileName="Potenz.GID" Version="" Language="" Attributes="0" SourcePath="Potenz.GID" SelfReg="false"/>
+    <ROW File="Potenz.aip" Component_="Unit3.dfm" FileName="Potenz.aip" Version="" Language="" Attributes="0" SourcePath="Potenz.aip" SelfReg="false"/>
+    <ROW File="Potenz.cfg" Component_="Unit3.dfm" FileName="Potenz.cfg" Version="" Language="" Attributes="0" SourcePath="Potenz.cfg" SelfReg="false"/>
+    <ROW File="Potenz.cnt" Component_="Potenz.hlp" FileName="Potenz.cnt" Version="" Language="" Attributes="0" SourcePath="Potenz.cnt" SelfReg="false"/>
+    <ROW File="Potenz.dof" Component_="Unit3.dfm" FileName="Potenz.dof" Version="" Language="" Attributes="0" SourcePath="Potenz.dof" SelfReg="false"/>
+    <ROW File="Potenz.dpr" Component_="Unit3.dfm" FileName="Potenz.dpr" Version="" Language="" Attributes="0" SourcePath="Potenz.dpr" SelfReg="false"/>
+    <ROW File="Potenz.exe" Component_="Potenz.exe" FileName="Potenz.exe" Version="" Language="" Attributes="0" SourcePath="Potenz.exe" SelfReg="false"/>
+    <ROW File="Potenz.hlp" Component_="Potenz.hlp" FileName="Potenz.hlp" Version="" Language="" Attributes="0" SourcePath="Potenz.hlp" SelfReg="false"/>
+    <ROW File="Potenz.hlp_1" Component_="Potenz.hlp_1" FileName="Potenz.hlp" Version="" Language="" Attributes="0" SourcePath="Potenz.hlp" SelfReg="false"/>
+    <ROW File="Potenz.ico" Component_="Unit3.dfm" FileName="Potenz.ico" Version="" Language="" Attributes="0" SourcePath="Potenz.ico" SelfReg="false"/>
+    <ROW File="Potenz.res" Component_="Unit3.dfm" FileName="Potenz.res" Version="" Language="" Attributes="0" SourcePath="Potenz.res" SelfReg="false"/>
+    <ROW File="Potenz.sh5" Component_="Unit3.dfm" FileName="Potenz.sh5" Version="" Language="" Attributes="0" SourcePath="Potenz.sh5" SelfReg="false"/>
+    <ROW File="Right.wav" Component_="Right.wav" FileName="Right.wav" Version="" Language="" Attributes="0" SourcePath="Right.wav" SelfReg="false"/>
+    <ROW File="Right.wav_1" Component_="Unit3.dfm" FileName="Right.wav" Version="" Language="" Attributes="0" SourcePath="Right.wav" SelfReg="false"/>
+    <ROW File="Unit1.dcu" Component_="Unit3.dfm" FileName="Unit1.dcu" Version="" Language="" Attributes="0" SourcePath="Unit1.dcu" SelfReg="false"/>
+    <ROW File="Unit1.dfm" Component_="Unit3.dfm" FileName="Unit1.dfm" Version="" Language="" Attributes="0" SourcePath="Unit1.dfm" SelfReg="false"/>
+    <ROW File="Unit1.pas" Component_="Unit3.dfm" FileName="Unit1.pas" Version="" Language="" Attributes="0" SourcePath="Unit1.pas" SelfReg="false"/>
+    <ROW File="Unit2.dcu" Component_="Unit3.dfm" FileName="Unit2.dcu" Version="" Language="" Attributes="0" SourcePath="Unit2.dcu" SelfReg="false"/>
+    <ROW File="Unit2.dfm" Component_="Unit3.dfm" FileName="Unit2.dfm" Version="" Language="" Attributes="0" SourcePath="Unit2.dfm" SelfReg="false"/>
+    <ROW File="Unit2.pas" Component_="Unit3.dfm" FileName="Unit2.pas" Version="" Language="" Attributes="0" SourcePath="Unit2.pas" SelfReg="false"/>
+    <ROW File="Unit3.dcu" Component_="Unit3.dfm" FileName="Unit3.dcu" Version="" Language="" Attributes="0" SourcePath="Unit3.dcu" SelfReg="false"/>
+    <ROW File="Unit3.dfm" Component_="Unit3.dfm" FileName="Unit3.dfm" Version="" Language="" Attributes="0" SourcePath="Unit3.dfm" SelfReg="false"/>
+    <ROW File="Unit3.pas" Component_="Unit3.dfm" FileName="Unit3.pas" Version="" Language="" Attributes="0" SourcePath="Unit3.pas" SelfReg="false"/>
+    <ROW File="Wrong.wav" Component_="Right.wav" FileName="Wrong.wav" Version="" Language="" Attributes="0" SourcePath="Wrong.wav" SelfReg="false"/>
+    <ROW File="Wrong.wav_1" Component_="Unit3.dfm" FileName="Wrong.wav" Version="" Language="" Attributes="0" SourcePath="Wrong.wav" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="default_banner.bmp" SourcePath="&lt;default-banner.bmp&gt;"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;default-dialog.bmp&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Potenz.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="FirstMediaSize" value="0"/>
+    <ATTRIBUTE name="FirstMediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="InstallationType" value="0"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="MediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="Package" value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Hilfe" Directory_="SHORTCUTDIR" Name="Hilfe" Component_="Potenz.hlp" Target="[#Potenz.hlp]" Arguments="" Description="" Hotkey="0" Icon_="" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="Potenz_bungsprogramm" Directory_="SHORTCUTDIR" Name="Potenz~1|Potenzübungsprogramm" Component_="Potenz.exe" Target="[#Potenz.exe]" Arguments="" Description="" Hotkey="0" Icon_="" IconIndex="0" ShowCmd="1" WkDir="TARGETDIR"/>
+    <ROW Shortcut="Potenz_bungsprogramm_1" Directory_="DesktopFolder" Name="Potenz~1|Potenzübungsprogramm" Component_="Potenz.exe" Target="[#Potenz.exe]" Arguments="" Description="" Hotkey="0" Icon_="" IconIndex="0" ShowCmd="1" WkDir="TARGETDIR"/>
+    <ROW Shortcut="Uninstall" Directory_="SHORTCUTDIR" Name="Uninst~1|Uninstall" Component_="Potenz.hlp" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+</DOCUMENT>

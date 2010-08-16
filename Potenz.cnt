@@ -1,0 +1,44 @@
+:Base potenz.hlp
+1 Willkommen!=willkommen>Main
+1 Funktionsübersicht=funktionsübersicht>Main
+1 Lizenz=lizenz>Main
+1 Bedienung
+2 Menü
+3 Datei
+4 Neue Übung starten=neueübungstarten>Main
+4 Auswerten=auswerten>Main
+4 Beenden=beenden>Main
+3 Optionen
+4 Negative Exponenten=negativeexponenten>Main
+4 Zahlenbereich=zahlenbereich>Main
+4 Aufgaben=aufgaben>Main
+4 Ganzzahlige Ergebnisse=ganzzahligeergebnisse>Main
+4 Sounds=sounds>Main
+4 Zeit anzeigen=zeitanzeigen>Main
+3 ?
+4 Internet Ranking=internetranking>Main
+4 Hilfe=hilfe>Main
+4 Über=über>Main
+2 Buttons
+3 Hauptfenster
+4 Überprüfen=überprüfen>Main
+4 Weiter=weiter>Main
+4 Rechner=rechner>Main
+3 Zusammenfassung
+4 Ergebnisse übertragen=ergebnisseübertragen>Main
+4 Schließen=schließen>Main
+3 Über Dialog
+4 Schließen=about_schließen>Main
+4 GPL=gpl>Main
+2 Eingabefelder
+3 Basis=basis>Main
+3 Exponent=exponent>Main
+2 Tastatur=tastatur>Main
+1 Funktionen
+2 Internet Ranking=funktion:internetranking>Main
+2 Soundausgabe=soundausgabe>Main
+1 Potenzgesetze
+2 gleiche Basis=gleichebasis>Main
+2 gleicher Exponent=gleicherexponent>Main
+2 Potenz einer Potenz=potenzeinerpotenz>Main
+
